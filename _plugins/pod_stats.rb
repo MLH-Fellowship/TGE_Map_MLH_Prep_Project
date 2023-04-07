@@ -29,7 +29,7 @@ module PodStats
 
           github_username = pull["author"]["login"]
           each_contribution = pull["total"]
-          contributor = {"github_username": github_username, "contributions": each_contribution}
+          contributor = {'github_username' => github_username, 'contributions' => each_contribution}
           contributors.push(contributor)
 
         end
