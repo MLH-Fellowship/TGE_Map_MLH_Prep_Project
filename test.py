@@ -10,6 +10,8 @@ url = "https://api.github.com/repos/MLH-Fellowship/prep-portfolio-23.APR.PREP.1/
 headers = {
     "Authorization": "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"
 }
+# note this Personal Access Token was revoked cuz I leaked it like an idiot, generate a new one if you need to run this one again
+
 response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
